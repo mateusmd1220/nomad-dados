@@ -43,14 +43,13 @@ for name in "$base.$ver".part*; do
   psize=$(stat -c %s "$name")
   [ "$psize" -gt 0 ] || { echo "::error::parte vazia: $name"; exit 1; }
   total=$((total + psize))
-  printf '%s %s %s
-' "$name" "$psize" "$(sha256sum "$name" | cut -d' ' -f1)" >> partes.txt
+  printf '%s %s %s\n' "$name" "$psize" "$(sha256sum "$name" | cut -d' ' -f1)" >> partes.txt
 done
 [ "$total" = "$size" ] || { echo "::error::partes somam $total, esperado $size"; exit 1; }
-while read -r name _; do
+while read -r -u 3 name _; do
   retry upload "$name"
   rm "$name"
-done < partes.txt
+done 3< partes.txt
 
 python3 - "$tipo" "$id" "$base" "$size" "$sha" "$fonte" > manifest.json <<'EOF'
 import json, sys, time
