@@ -1,8 +1,173 @@
 {
  "version": 1,
- "updated": "2026-11-01T20:11:27Z",
+ "updated": "2026-11-01T21:02:41Z",
  "base": "https://github.com/mateusmd1220/nomad-dados/releases/download",
  "items": [
+  {
+   "kind": "lugares",
+   "id": "america-do-sul",
+   "file": "lugares-america-do-sul.sqlite",
+   "version": "2026-11-01",
+   "size": 961032192,
+   "sha256": "30998e691370f372deda8fc976fdcefbaa009cc0b0685e5831646b7017301550",
+   "source": "south-america-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "lugares-america-do-sul.sqlite.20261101.part000",
+     "size": 536870912,
+     "sha256": "f0bcb654dc10976f1ea7dadb0a3ff77ca89f97439213f1777bc03faebd308737"
+    },
+    {
+     "name": "lugares-america-do-sul.sqlite.20261101.part001",
+     "size": 424161280,
+     "sha256": "bd25b188eac839662c6ff9a8b199862d15cb8a323fbfa84c97d482a5243bbe08"
+    }
+   ]
+  },
+  {
+   "kind": "lugares",
+   "id": "argentina",
+   "file": "lugares-argentina.sqlite",
+   "version": "2026-11-01",
+   "size": 123990016,
+   "sha256": "ea1d9439c6d12ca37a179dba2ab1d6660c85e69d8161d7919b522dcbedb71b6a",
+   "source": "argentina-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "lugares-argentina.sqlite.20261101.part000",
+     "size": 123990016,
+     "sha256": "ea1d9439c6d12ca37a179dba2ab1d6660c85e69d8161d7919b522dcbedb71b6a"
+    }
+   ]
+  },
+  {
+   "kind": "lugares",
+   "id": "bolivia",
+   "file": "lugares-bolivia.sqlite",
+   "version": "2026-11-01",
+   "size": 25272320,
+   "sha256": "ba301f6a11ac5b26283cc0b6ca482b05cf93d9262682ebd34cb8623716c09043",
+   "source": "bolivia-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "lugares-bolivia.sqlite.20261101.part000",
+     "size": 25272320,
+     "sha256": "ba301f6a11ac5b26283cc0b6ca482b05cf93d9262682ebd34cb8623716c09043"
+    }
+   ]
+  },
+  {
+   "kind": "lugares",
+   "id": "brasil",
+   "file": "lugares-brasil.sqlite",
+   "version": "2026-11-01",
+   "size": 507817984,
+   "sha256": "0b07675e037a0416a0047b4c0a9d26dbabe1675407cc8f482855d6a680bba02a",
+   "source": "brazil-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "lugares-brasil.sqlite.20261101.part000",
+     "size": 507817984,
+     "sha256": "0b07675e037a0416a0047b4c0a9d26dbabe1675407cc8f482855d6a680bba02a"
+    }
+   ]
+  },
+  {
+   "kind": "lugares",
+   "id": "chile",
+   "file": "lugares-chile.sqlite",
+   "version": "2026-11-01",
+   "size": 71258112,
+   "sha256": "af9262e73b996ac1389a4e54e8403231d4255b4665cb8caa0ebc6bf791c8781a",
+   "source": "chile-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "lugares-chile.sqlite.20261101.part000",
+     "size": 71258112,
+     "sha256": "af9262e73b996ac1389a4e54e8403231d4255b4665cb8caa0ebc6bf791c8781a"
+    }
+   ]
+  },
+  {
+   "kind": "lugares",
+   "id": "colombia",
+   "file": "lugares-colombia.sqlite",
+   "version": "2026-11-01",
+   "size": 66887680,
+   "sha256": "8af989285fcb34b2397fa1c1f6d47fe9b261885f595b53b5b0f432c01643938e",
+   "source": "colombia-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "lugares-colombia.sqlite.20261101.part000",
+     "size": 66887680,
+     "sha256": "8af989285fcb34b2397fa1c1f6d47fe9b261885f595b53b5b0f432c01643938e"
+    }
+   ]
+  },
+  {
+   "kind": "lugares",
+   "id": "equador",
+   "file": "lugares-equador.sqlite",
+   "version": "2026-11-01",
+   "size": 40034304,
+   "sha256": "74b6bf2efc47118bb53b359bd399ccdf48d46b86b74dcfea0ae55fa2c17457d9",
+   "source": "ecuador-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "lugares-equador.sqlite.20261101.part000",
+     "size": 40034304,
+     "sha256": "74b6bf2efc47118bb53b359bd399ccdf48d46b86b74dcfea0ae55fa2c17457d9"
+    }
+   ]
+  },
+  {
+   "kind": "lugares",
+   "id": "mundo",
+   "file": "lugares-mundo.sqlite",
+   "version": "2026-11-01",
+   "size": 72900608,
+   "sha256": "c8b1f11a94e7fe50165ef84ff384f02fde1a256e512de69f1bb3a1f89a90c621",
+   "source": "GeoNames (CC BY 4.0) e OurAirports (domínio público), 2026-11-01",
+   "parts": [
+    {
+     "name": "lugares-mundo.sqlite.20261101.part000",
+     "size": 72900608,
+     "sha256": "c8b1f11a94e7fe50165ef84ff384f02fde1a256e512de69f1bb3a1f89a90c621"
+    }
+   ]
+  },
+  {
+   "kind": "lugares",
+   "id": "paraguai",
+   "file": "lugares-paraguai.sqlite",
+   "version": "2026-11-01",
+   "size": 14602240,
+   "sha256": "95121118d6bcf837d1e135141452ecbbefaacc2c0d8e1635aa05bfda8bf8bb94",
+   "source": "paraguay-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "lugares-paraguai.sqlite.20261101.part000",
+     "size": 14602240,
+     "sha256": "95121118d6bcf837d1e135141452ecbbefaacc2c0d8e1635aa05bfda8bf8bb94"
+    }
+   ]
+  },
+  {
+   "kind": "lugares",
+   "id": "peru",
+   "file": "lugares-peru.sqlite",
+   "version": "2026-11-01",
+   "size": 69341184,
+   "sha256": "23ac0a0e37d604beba2dbc1be58efd21811ffe6ba0e7e3cf88c9c676994c5c8b",
+   "source": "peru-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "lugares-peru.sqlite.20261101.part000",
+     "size": 69341184,
+     "sha256": "23ac0a0e37d604beba2dbc1be58efd21811ffe6ba0e7e3cf88c9c676994c5c8b"
+    }
+   ]
+  },
   {
    "kind": "lugares",
    "id": "uruguai",
@@ -16,6 +181,377 @@
      "name": "lugares-uruguai.sqlite.20261101.part000",
      "size": 11046912,
      "sha256": "b0b680e58aa98d21f9a7925ef4ede331fecd5d35decc4efcec3a812145bf976d"
+    }
+   ]
+  },
+  {
+   "kind": "lugares",
+   "id": "venezuela",
+   "file": "lugares-venezuela.sqlite",
+   "version": "2026-11-01",
+   "size": 25169920,
+   "sha256": "e482b8c07533871a639961f5726cc8563ecf956234327bcf6e413eb306f0ae52",
+   "source": "venezuela-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "lugares-venezuela.sqlite.20261101.part000",
+     "size": 25169920,
+     "sha256": "e482b8c07533871a639961f5726cc8563ecf956234327bcf6e413eb306f0ae52"
+    }
+   ]
+  },
+  {
+   "kind": "mapa",
+   "id": "america-do-sul",
+   "file": "america-do-sul.pmtiles",
+   "version": "2026-11-01",
+   "size": 8681455289,
+   "sha256": "9e097c2e6f16f29f8792bb8a77ec7d41b502ae85f8fdfa29853080d3dd5568b3",
+   "source": "Protomaps 20261101 (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "america-do-sul.pmtiles.20261101.part000",
+     "size": 536870912,
+     "sha256": "2e15c212540fc3f7cc17ea18351accc7862d7f0af2cb6fd0c9f5f5bfbecb402b"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part001",
+     "size": 536870912,
+     "sha256": "a2c3dcbe3ae1140a9690fb00adf2470924e2441fc77d5cb43fe99c6f03a84845"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part002",
+     "size": 536870912,
+     "sha256": "5fba443997849e64be5ce93b2ea818c9c6b1ef1d67cac458a979a5265c848c9c"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part003",
+     "size": 536870912,
+     "sha256": "a41d876b920b8347bd2feb7cc0628fc4dbe7d69d03302e9089958989a20ad6aa"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part004",
+     "size": 536870912,
+     "sha256": "4807f5a4f9edf3986d34bc4f9318a6ddc858d6f6bdf246fc57e4831644f3b36d"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part005",
+     "size": 536870912,
+     "sha256": "a2fd872113df29e94904b231079ef9b1a8f762ab4d18008b5f54c1d63eae1d93"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part006",
+     "size": 536870912,
+     "sha256": "9b612938371e05c358eb147778bbf25d4490b39cee31cb73f75d6abd4b3dca88"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part007",
+     "size": 536870912,
+     "sha256": "b7c48ab47a224f5e1ce93d1be3dc2f8269051fef7784b0d63cf40cd4e048dcb6"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part008",
+     "size": 536870912,
+     "sha256": "0d777817c4ee8956ded8cb2b8b8c49289fd46e2b217a83bae7ebb0dda81310b9"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part009",
+     "size": 536870912,
+     "sha256": "fb25dc2e3ad9568f756f6ed03ba3497482c610058e5a9838ef35c585b037903f"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part010",
+     "size": 536870912,
+     "sha256": "fff051f995c3b0b3db9527f58289e8d0f8275309dcb70cf6310539ef4a48fc1c"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part011",
+     "size": 536870912,
+     "sha256": "2262dba0d081acd0bbe241b765932dcf142b12f7c3b7245809f145912ef6ee4d"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part012",
+     "size": 536870912,
+     "sha256": "6418a38d7b6068e509c8376dae2e2c542c33b9fc3169d74d94aab886b444ba8f"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part013",
+     "size": 536870912,
+     "sha256": "4097fb09b7a181f6d124bd568bf4e1f7bfc32d5b19b15a93119c6ba2e28c7b6c"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part014",
+     "size": 536870912,
+     "sha256": "4b9cf094f9a68a989a0b867f5289edaf6c9faf1346279a161e2111b4ac79c3fe"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part015",
+     "size": 536870912,
+     "sha256": "e08eb5b60c2eed3cfc4c13bdbb74ff98e43eef4cafceba685324e36aa5fbc43f"
+    },
+    {
+     "name": "america-do-sul.pmtiles.20261101.part016",
+     "size": 91520697,
+     "sha256": "01d38c49afc08ecc73b51b3a4b31ee2678088ddd24d76f0fa2cd547163ba45ac"
+    }
+   ]
+  },
+  {
+   "kind": "mapa",
+   "id": "argentina",
+   "file": "argentina.pmtiles",
+   "version": "2026-11-01",
+   "size": 2232481709,
+   "sha256": "4e7b11b982f4e1fc7419d2859e2fe3a9a9aaa5c2269cb76c6cf4b130e4085ae6",
+   "source": "Protomaps 20261101 (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "argentina.pmtiles.20261101.part000",
+     "size": 536870912,
+     "sha256": "cefa0f9a8f42e13dc0549f072864b7d1da2805e45df761a303fcf9fde9817835"
+    },
+    {
+     "name": "argentina.pmtiles.20261101.part001",
+     "size": 536870912,
+     "sha256": "c8c22000ab8183546f6e1387219bb32624010ebacaf37310ec9b14b932f5dcea"
+    },
+    {
+     "name": "argentina.pmtiles.20261101.part002",
+     "size": 536870912,
+     "sha256": "085add5503a7118b034040d9862d5ea84459882927b786f7833db0425e425177"
+    },
+    {
+     "name": "argentina.pmtiles.20261101.part003",
+     "size": 536870912,
+     "sha256": "f469a94e09147e4945505e79d44db4117d99cf1e89f43d0d3ebe728710507aef"
+    },
+    {
+     "name": "argentina.pmtiles.20261101.part004",
+     "size": 84998061,
+     "sha256": "72f59ef8454d793c3c60232be47d9dce1ca8cf61fa7d495d0764849a180b5a0b"
+    }
+   ]
+  },
+  {
+   "kind": "mapa",
+   "id": "bolivia",
+   "file": "bolivia.pmtiles",
+   "version": "2026-11-01",
+   "size": 606152733,
+   "sha256": "339ebe9c10aab589cd5595605fe326d62184887dcdda76f3d78b0f0e36e1f06e",
+   "source": "Protomaps 20261101 (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "bolivia.pmtiles.20261101.part000",
+     "size": 536870912,
+     "sha256": "a76c62aa38631f0b82f6574351e506742d03ca2b01fe32b60bc812278ee440b5"
+    },
+    {
+     "name": "bolivia.pmtiles.20261101.part001",
+     "size": 69281821,
+     "sha256": "62851a705e13c3ef16dafc93746d254c7c31cfcf444c1159010f415347cebfe0"
+    }
+   ]
+  },
+  {
+   "kind": "mapa",
+   "id": "brasil",
+   "file": "brasil.pmtiles",
+   "version": "2026-11-01",
+   "size": 6141748505,
+   "sha256": "0f73eddd210e04e2b0c3fe55052aed5e2604a934732992028dcb4ad5b895dce0",
+   "source": "Protomaps 20261101 (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "brasil.pmtiles.20261101.part000",
+     "size": 536870912,
+     "sha256": "284182e4dfe56a875cbc0c90934a98dc81d08b5e776289d6711fceea93d26f45"
+    },
+    {
+     "name": "brasil.pmtiles.20261101.part001",
+     "size": 536870912,
+     "sha256": "f979ddd1d360780c64d53973adbff2edd13365fc79dba589eb46ee5d17173bde"
+    },
+    {
+     "name": "brasil.pmtiles.20261101.part002",
+     "size": 536870912,
+     "sha256": "00379266769de76d65f562366cb75786cf92ebdb368361edffec6c0b20bb5810"
+    },
+    {
+     "name": "brasil.pmtiles.20261101.part003",
+     "size": 536870912,
+     "sha256": "5211350917c0e49840c4ce0830af792dcbe9d7941cbdb4f5cfa1ae4bc7153876"
+    },
+    {
+     "name": "brasil.pmtiles.20261101.part004",
+     "size": 536870912,
+     "sha256": "4f9f718372db46e0bf9b8e754dbbb9bca2931623d5929fa4eea16205e8b90494"
+    },
+    {
+     "name": "brasil.pmtiles.20261101.part005",
+     "size": 536870912,
+     "sha256": "732b7549b4e0229a1aa9d7f62b6b8d35e366a5ad81e2a81450e886d29ab76c99"
+    },
+    {
+     "name": "brasil.pmtiles.20261101.part006",
+     "size": 536870912,
+     "sha256": "16db7b6191e6a609681838232ea8230af0c1fdf1aa83feb7d01bf7bd664bb504"
+    },
+    {
+     "name": "brasil.pmtiles.20261101.part007",
+     "size": 536870912,
+     "sha256": "b57db3bab74fe3c73f1dd1e9422b73d55d30e529c4c154621eaf29f1116cfe7a"
+    },
+    {
+     "name": "brasil.pmtiles.20261101.part008",
+     "size": 536870912,
+     "sha256": "2c9370b95bf646f9ce31c8e0000521baf6d6e503e344a96d4d6612c28a2dab61"
+    },
+    {
+     "name": "brasil.pmtiles.20261101.part009",
+     "size": 536870912,
+     "sha256": "2e890b91f63a100b8f7eeb2f0a2fc024fae7f7132cc5bb315e11816fa24eedd8"
+    },
+    {
+     "name": "brasil.pmtiles.20261101.part010",
+     "size": 536870912,
+     "sha256": "e15af9d6b27c148c469ea93b961ced510b5e7945a539305536ba6fcf6e9778c0"
+    },
+    {
+     "name": "brasil.pmtiles.20261101.part011",
+     "size": 236168473,
+     "sha256": "6c721f10d04e5a9fd3ebc39e8637fd7d3ebddb389ef1b9e788a7f38c4922c0d2"
+    }
+   ]
+  },
+  {
+   "kind": "mapa",
+   "id": "chile",
+   "file": "chile.pmtiles",
+   "version": "2026-11-01",
+   "size": 1175315802,
+   "sha256": "abcee5d7d6bca9bcb28afc1d5bfdf42a038141ae7ea4d830332069ecb45ef490",
+   "source": "Protomaps 20261101 (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "chile.pmtiles.20261101.part000",
+     "size": 536870912,
+     "sha256": "56eef580a4d7c879805b959b73c7c975af111e62af05c23c023ea10df8f85935"
+    },
+    {
+     "name": "chile.pmtiles.20261101.part001",
+     "size": 536870912,
+     "sha256": "d6921af3a844fdbf64113736c5477eab6e23b3771c425f0430ea21ac299cdb5f"
+    },
+    {
+     "name": "chile.pmtiles.20261101.part002",
+     "size": 101573978,
+     "sha256": "ccfeffdda839b7afab9de618a3fbfc1a89d9a4e335d098d34caadefde923a6d0"
+    }
+   ]
+  },
+  {
+   "kind": "mapa",
+   "id": "colombia",
+   "file": "colombia.pmtiles",
+   "version": "2026-11-01",
+   "size": 1091056940,
+   "sha256": "5fd0d1df88efde7d87e05309405a4f76ab5214c304f9c574b817d7f0ece7e10d",
+   "source": "Protomaps 20261101 (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "colombia.pmtiles.20261101.part000",
+     "size": 536870912,
+     "sha256": "070366aea32aec57279aa81e6172f65383e1752c0747ee1ee6dd4d49e8900fa0"
+    },
+    {
+     "name": "colombia.pmtiles.20261101.part001",
+     "size": 536870912,
+     "sha256": "aa120e0667a27f9e1d46c3619173bd4c20eb1ea1455a49ed8d9e3bb587214f68"
+    },
+    {
+     "name": "colombia.pmtiles.20261101.part002",
+     "size": 17315116,
+     "sha256": "e271a660a8f2a5fb66e491519b0db931a581160a9dac3cc977513abf67d5144b"
+    }
+   ]
+  },
+  {
+   "kind": "mapa",
+   "id": "equador",
+   "file": "equador.pmtiles",
+   "version": "2026-11-01",
+   "size": 270830578,
+   "sha256": "632f61b2ef5cf5e219331c1e8bf7314c27e33a3401acd077aac1cd27e9706344",
+   "source": "Protomaps 20261101 (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "equador.pmtiles.20261101.part000",
+     "size": 270830578,
+     "sha256": "632f61b2ef5cf5e219331c1e8bf7314c27e33a3401acd077aac1cd27e9706344"
+    }
+   ]
+  },
+  {
+   "kind": "mapa",
+   "id": "mundo",
+   "file": "mundo.pmtiles",
+   "version": "2026-11-01",
+   "size": 1582019692,
+   "sha256": "6868b4abf854648dad8098ef7a1f9d98426385bbc21af9569ee2af2d510dfac5",
+   "source": "Protomaps 20261101 (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "mundo.pmtiles.20261101.part000",
+     "size": 536870912,
+     "sha256": "9e6184f22e38fa2a7cdbe39b89adb50a8604ca34eb7252e1bf9d6c2e15ddffd6"
+    },
+    {
+     "name": "mundo.pmtiles.20261101.part001",
+     "size": 536870912,
+     "sha256": "fec990ed81c104b508bdf4779a71cb8184d105977776ca467d40b3502f544290"
+    },
+    {
+     "name": "mundo.pmtiles.20261101.part002",
+     "size": 508277868,
+     "sha256": "64578ec9bc6cc18d223fe250b9c6aa1327100ed1c54238e08fd657c216ae82be"
+    }
+   ]
+  },
+  {
+   "kind": "mapa",
+   "id": "paraguai",
+   "file": "paraguai.pmtiles",
+   "version": "2026-11-01",
+   "size": 367757556,
+   "sha256": "ae19e71985a7e10bb8cbe90e5af7fb3df426b4b904b1edd3bf21930ee1d70405",
+   "source": "Protomaps 20261101 (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "paraguai.pmtiles.20261101.part000",
+     "size": 367757556,
+     "sha256": "ae19e71985a7e10bb8cbe90e5af7fb3df426b4b904b1edd3bf21930ee1d70405"
+    }
+   ]
+  },
+  {
+   "kind": "mapa",
+   "id": "peru",
+   "file": "peru.pmtiles",
+   "version": "2026-11-01",
+   "size": 851618674,
+   "sha256": "6be08b01a037908ef27d2872833d526791fb10c061c400d888bbc46b2e60643e",
+   "source": "Protomaps 20261101 (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "peru.pmtiles.20261101.part000",
+     "size": 536870912,
+     "sha256": "2f00f370b91d0aba03cb789c453cc4f8d6ece4418ec61ce5094626938bc862f6"
+    },
+    {
+     "name": "peru.pmtiles.20261101.part001",
+     "size": 314747762,
+     "sha256": "bf527138394eeb755fff8b4d97b5bd498eeb1d0fe301066e05ee3ffdc28eceb6"
     }
    ]
   },
@@ -36,6 +572,261 @@
    ]
   },
   {
+   "kind": "mapa",
+   "id": "venezuela",
+   "file": "venezuela.pmtiles",
+   "version": "2026-11-01",
+   "size": 569463048,
+   "sha256": "b03dbfe196a4e8fb5dcdb2797488bb493f41b421f8c6a455ba40e357c97d20c5",
+   "source": "Protomaps 20261101 (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "venezuela.pmtiles.20261101.part000",
+     "size": 536870912,
+     "sha256": "36895e61d9d7872f4d13acafe69d345da687db07b5a97ddceb207589dafce97e"
+    },
+    {
+     "name": "venezuela.pmtiles.20261101.part001",
+     "size": 32592136,
+     "sha256": "68a541a0eab6770a384f650048f879b517580e043d4f10ff607fada670c6332b"
+    }
+   ]
+  },
+  {
+   "kind": "rotas",
+   "id": "america-do-sul",
+   "file": "rotas-america-do-sul.tar",
+   "version": "2026-11-01",
+   "size": 6257899520,
+   "sha256": "2e005e15460adedd83f4f711905b77639913706807c2d1cb9a1ad8fa9320387a",
+   "source": "south-america-261031.osm.pbf (OpenStreetMap, ODbL); Valhalla 3.9.0",
+   "parts": [
+    {
+     "name": "rotas-america-do-sul.tar.20261101.part000",
+     "size": 536870912,
+     "sha256": "7199c57d118485044ce248b22a50240d390d30031d65f49b785990884d796008"
+    },
+    {
+     "name": "rotas-america-do-sul.tar.20261101.part001",
+     "size": 536870912,
+     "sha256": "d3ab0a8af17aafebadd9e0669229ac33d2e291503a651dcede627297104fcd47"
+    },
+    {
+     "name": "rotas-america-do-sul.tar.20261101.part002",
+     "size": 536870912,
+     "sha256": "f95b2797a444f5745003ded7b929820c37ff52da749e385c5929d03df3c6155c"
+    },
+    {
+     "name": "rotas-america-do-sul.tar.20261101.part003",
+     "size": 536870912,
+     "sha256": "6ded018f29ab3bca490d53f1eb8b03c59173e99cab3b0d5fab92b0f5842bea89"
+    },
+    {
+     "name": "rotas-america-do-sul.tar.20261101.part004",
+     "size": 536870912,
+     "sha256": "3e256a6e4c6bea9de54782355ca543298a9792df027bf4f5bc8eae1ccb7d8df1"
+    },
+    {
+     "name": "rotas-america-do-sul.tar.20261101.part005",
+     "size": 536870912,
+     "sha256": "a6f42d807ba6dbfda2d0ee2ad88d3fcc566b8fda2374f77a129cc1a8681e008d"
+    },
+    {
+     "name": "rotas-america-do-sul.tar.20261101.part006",
+     "size": 536870912,
+     "sha256": "6e8bd029594037896cdca6a6172bce009d3b273ccda9a8a38cfe36b9e8885479"
+    },
+    {
+     "name": "rotas-america-do-sul.tar.20261101.part007",
+     "size": 536870912,
+     "sha256": "88f80e3fb923aec355d6cd8bb9d22632ba9cbbd8472fc1d8ae2a3975da3c5648"
+    },
+    {
+     "name": "rotas-america-do-sul.tar.20261101.part008",
+     "size": 536870912,
+     "sha256": "fb36ff3b90da6f3f9f1a5a10237622aa18c2ef57f41526d2f25eaa3df1a4191a"
+    },
+    {
+     "name": "rotas-america-do-sul.tar.20261101.part009",
+     "size": 536870912,
+     "sha256": "8b3053f0de55b9cb50da38038eb0f7227cc942e43cf4fb06f79e47a838c05d19"
+    },
+    {
+     "name": "rotas-america-do-sul.tar.20261101.part010",
+     "size": 536870912,
+     "sha256": "6b7a909fa0cd467e2e684cb6fc3e9e576fe41d71c7ab8ff95de6aef297c9807b"
+    },
+    {
+     "name": "rotas-america-do-sul.tar.20261101.part011",
+     "size": 352319488,
+     "sha256": "e58faf1229aa46f71785e12f4a1d89b774d270072262c1fd3117cbe3eceb6f7f"
+    }
+   ]
+  },
+  {
+   "kind": "rotas",
+   "id": "argentina",
+   "file": "rotas-argentina.tar",
+   "version": "2026-11-01",
+   "size": 755814400,
+   "sha256": "e3d0c6da1ac9a95368be7c76e032c0a96fc5e4aa3117d5402effcba8059a94e5",
+   "source": "argentina-261031.osm.pbf (OpenStreetMap, ODbL); Valhalla 3.9.0",
+   "parts": [
+    {
+     "name": "rotas-argentina.tar.20261101.part000",
+     "size": 536870912,
+     "sha256": "c8bcd16e6301d5a6fee3e46ea06c4154892b05a59025727c757e239d8480f407"
+    },
+    {
+     "name": "rotas-argentina.tar.20261101.part001",
+     "size": 218943488,
+     "sha256": "a0fe5716a68ab63018e6de41a7f18d17ad46767af0ccb0a0cfe65362b23a5481"
+    }
+   ]
+  },
+  {
+   "kind": "rotas",
+   "id": "bolivia",
+   "file": "rotas-bolivia.tar",
+   "version": "2026-11-01",
+   "size": 278108160,
+   "sha256": "54f02f9911e42c1bbf264ccd88fe360b198f8c71dc5d90278ced13f881a9657d",
+   "source": "bolivia-261031.osm.pbf (OpenStreetMap, ODbL); Valhalla 3.9.0",
+   "parts": [
+    {
+     "name": "rotas-bolivia.tar.20261101.part000",
+     "size": 278108160,
+     "sha256": "54f02f9911e42c1bbf264ccd88fe360b198f8c71dc5d90278ced13f881a9657d"
+    }
+   ]
+  },
+  {
+   "kind": "rotas",
+   "id": "brasil",
+   "file": "rotas-brasil.tar",
+   "version": "2026-11-01",
+   "size": 3260856320,
+   "sha256": "fb52aeb5a6d6f7214f37ae9db275e9bd99272eec0e86bb4dd4d3a0ee85217f68",
+   "source": "brazil-261031.osm.pbf (OpenStreetMap, ODbL); Valhalla 3.9.0",
+   "parts": [
+    {
+     "name": "rotas-brasil.tar.20261101.part000",
+     "size": 536870912,
+     "sha256": "8f524397b39ccc8730434b337ad2aab424cf8be360812ff2ce881464db38fe05"
+    },
+    {
+     "name": "rotas-brasil.tar.20261101.part001",
+     "size": 536870912,
+     "sha256": "5ef8044188a4775635f36139254e57fe053723a8b5fdaa890d4d6a31131b894a"
+    },
+    {
+     "name": "rotas-brasil.tar.20261101.part002",
+     "size": 536870912,
+     "sha256": "b69ba6444d19f5b363ddb5bb47f784d63d7b80150e98b4e2e3d2895a7161e9fd"
+    },
+    {
+     "name": "rotas-brasil.tar.20261101.part003",
+     "size": 536870912,
+     "sha256": "9dda103fb835338d4ec12f1dffc62048b19d370369fd3ac34f9abfbbd1548530"
+    },
+    {
+     "name": "rotas-brasil.tar.20261101.part004",
+     "size": 536870912,
+     "sha256": "fb7378f3c9f5dfed53472994e25c39dd2547e4870b2f84983737b323e305c870"
+    },
+    {
+     "name": "rotas-brasil.tar.20261101.part005",
+     "size": 536870912,
+     "sha256": "ab13d445ca4d6d8d802b741fb2e4a3a1f35abb649f8ca9e1f296b6801d3d7728"
+    },
+    {
+     "name": "rotas-brasil.tar.20261101.part006",
+     "size": 39630848,
+     "sha256": "ac21fdbb3d83a373c7f004aa28a963d65be1b8e345c61d05cba4d9438e3f1cf8"
+    }
+   ]
+  },
+  {
+   "kind": "rotas",
+   "id": "chile",
+   "file": "rotas-chile.tar",
+   "version": "2026-11-01",
+   "size": 425697280,
+   "sha256": "33b41c43fc93dee6fb0239a4f230eb5f370d671ca1eb504dba3c28f80b3e0fca",
+   "source": "chile-261031.osm.pbf (OpenStreetMap, ODbL); Valhalla 3.9.0",
+   "parts": [
+    {
+     "name": "rotas-chile.tar.20261101.part000",
+     "size": 425697280,
+     "sha256": "33b41c43fc93dee6fb0239a4f230eb5f370d671ca1eb504dba3c28f80b3e0fca"
+    }
+   ]
+  },
+  {
+   "kind": "rotas",
+   "id": "colombia",
+   "file": "rotas-colombia.tar",
+   "version": "2026-11-01",
+   "size": 474316800,
+   "sha256": "c39887efa3861570fbfd411265ef230877bd2c83b45a885bd5fd430f60164a9e",
+   "source": "colombia-261031.osm.pbf (OpenStreetMap, ODbL); Valhalla 3.9.0",
+   "parts": [
+    {
+     "name": "rotas-colombia.tar.20261101.part000",
+     "size": 474316800,
+     "sha256": "c39887efa3861570fbfd411265ef230877bd2c83b45a885bd5fd430f60164a9e"
+    }
+   ]
+  },
+  {
+   "kind": "rotas",
+   "id": "equador",
+   "file": "rotas-equador.tar",
+   "version": "2026-11-01",
+   "size": 220876800,
+   "sha256": "4334f2b8fd53ab788cc57db97363b613527550d79b40106edc741d26fb683617",
+   "source": "ecuador-261031.osm.pbf (OpenStreetMap, ODbL); Valhalla 3.9.0",
+   "parts": [
+    {
+     "name": "rotas-equador.tar.20261101.part000",
+     "size": 220876800,
+     "sha256": "4334f2b8fd53ab788cc57db97363b613527550d79b40106edc741d26fb683617"
+    }
+   ]
+  },
+  {
+   "kind": "rotas",
+   "id": "paraguai",
+   "file": "rotas-paraguai.tar",
+   "version": "2026-11-01",
+   "size": 124661760,
+   "sha256": "52dc29a715a7c13fb31470f902f91e550ee6c19af01f9d8ee22c11d5ff03fc07",
+   "source": "paraguay-261031.osm.pbf (OpenStreetMap, ODbL); Valhalla 3.9.0",
+   "parts": [
+    {
+     "name": "rotas-paraguai.tar.20261101.part000",
+     "size": 124661760,
+     "sha256": "52dc29a715a7c13fb31470f902f91e550ee6c19af01f9d8ee22c11d5ff03fc07"
+    }
+   ]
+  },
+  {
+   "kind": "rotas",
+   "id": "peru",
+   "file": "rotas-peru.tar",
+   "version": "2026-11-01",
+   "size": 445122560,
+   "sha256": "eb282da2a6f0cc8060709f976fef3643969180175716396ce51a521edf3891b5",
+   "source": "peru-261031.osm.pbf (OpenStreetMap, ODbL); Valhalla 3.9.0",
+   "parts": [
+    {
+     "name": "rotas-peru.tar.20261101.part000",
+     "size": 445122560,
+     "sha256": "eb282da2a6f0cc8060709f976fef3643969180175716396ce51a521edf3891b5"
+    }
+   ]
+  },
+  {
    "kind": "rotas",
    "id": "uruguai",
    "file": "rotas-uruguai.tar",
@@ -48,6 +839,22 @@
      "name": "rotas-uruguai.tar.20261101.part000",
      "size": 59576320,
      "sha256": "499094b3b54120a6ad521d26234fd36df6aae329259447dd975c82629110e719"
+    }
+   ]
+  },
+  {
+   "kind": "rotas",
+   "id": "venezuela",
+   "file": "rotas-venezuela.tar",
+   "version": "2026-11-01",
+   "size": 217978880,
+   "sha256": "0726814aa2d7b3009c1a877bb56bf0891384b05ca2e8d86b17e929abe499960f",
+   "source": "venezuela-261031.osm.pbf (OpenStreetMap, ODbL); Valhalla 3.9.0",
+   "parts": [
+    {
+     "name": "rotas-venezuela.tar.20261101.part000",
+     "size": 217978880,
+     "sha256": "0726814aa2d7b3009c1a877bb56bf0891384b05ca2e8d86b17e929abe499960f"
     }
    ]
   }
