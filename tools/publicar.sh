@@ -21,7 +21,11 @@ upload() {
   name=$(basename "$1")
   aid=$(gh api "repos/$GH_REPO/releases/$rid/assets" --paginate -q ".[] | select(.name == \"$name\") | .id")
   [ -z "$aid" ] || gh api -X DELETE "repos/$GH_REPO/releases/assets/$aid"
-  curl -fsS -X POST -T "$1" -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/octet-stream"     "https://uploads.github.com/repos/$GH_REPO/releases/$rid/assets?name=$name" > /dev/null
+  local code
+  code=$(curl -sS -o resp.json -w '%{http_code}' -X POST -T "$1" -H "Authorization: Bearer $GH_TOKEN"     -H "Content-Type: application/octet-stream" "https://uploads.github.com/repos/$GH_REPO/releases/$rid/assets?name=$name")
+  [ "$code" = 201 ] && return 0
+  echo "upload de $name ($(stat -c %s "$1") bytes): HTTP $code $(head -c 400 resp.json)"
+  return 1
 }
 
 if ! gh release view "$tag" > /dev/null 2>&1; then
