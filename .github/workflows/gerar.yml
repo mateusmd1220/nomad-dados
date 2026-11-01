@@ -58,7 +58,7 @@ jobs:
           if [ "${{ matrix.item.tipo }}" != rotas ]; then sudo docker image prune --all --force > /dev/null; fi
           # Work on the disk with the most free space.
           best=/ ; for d in / /mnt; do [ -d "$d" ] && [ "$(df --output=avail "$d" | tail -1)" -gt "$(df --output=avail "$best" | tail -1)" ] && best=$d; done
-          w="$best/trabalho"; sudo mkdir -p "$w"; sudo chown "$(id -u):$(id -g)" "$w"
+          w="${best%/}/trabalho"; sudo mkdir -p "$w"; sudo chown "$(id -u):$(id -g)" "$w"
           echo "W=$w" >> "$GITHUB_ENV"
           df -h / /mnt || true
 

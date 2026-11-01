@@ -15,11 +15,21 @@ n=$(((size + PART - 1) / PART))
 
 retry() { for i in 1 2 3 4 5; do "$@" && return 0; echo "tentativa $i falhou: $*"; sleep $((i * 20)); done; return 1; }
 
+# Upload with curl (streams the file with an exact Content-Length), replacing an asset of the same name.
+upload() {
+  local name aid
+  name=$(basename "$1")
+  aid=$(gh api "repos/$GH_REPO/releases/$rid/assets" --paginate -q ".[] | select(.name == \"$name\") | .id")
+  [ -z "$aid" ] || gh api -X DELETE "repos/$GH_REPO/releases/assets/$aid"
+  curl -fsS -X POST -T "$1" -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/octet-stream"     "https://uploads.github.com/repos/$GH_REPO/releases/$rid/assets?name=$name" > /dev/null
+}
+
 if ! gh release view "$tag" > /dev/null 2>&1; then
   retry gh release create "$tag" --latest=false --title "$tipo: $id" \
     --notes "Arquivo offline do NOMAD ($tipo, região $id). Baixe pelo app (Mapas → Regiões). Dados: OpenStreetMap (ODbL), Protomaps, GeoNames, OurAirports, Valhalla."
 fi
 antigos=$(gh release view "$tag" --json assets -q '.assets[].name')
+rid=$(gh api "repos/$GH_REPO/releases/tags/$tag" -q .id)
 
 : > partes.txt
 for ((i = n - 1; i >= 0; i--)); do
@@ -28,7 +38,7 @@ for ((i = n - 1; i >= 0; i--)); do
   tail -c +$((off + 1)) "$f" > "$name"
   truncate -s "$off" "$f"
   printf '%s %s %s\n' "$name" "$(stat -c %s "$name")" "$(sha256sum "$name" | cut -d' ' -f1)" >> partes.txt
-  retry gh release upload "$tag" "$name" --clobber
+  retry upload "$name"
   rm "$name"
 done
 rm -f "$f"
@@ -44,7 +54,7 @@ assert sum(p["size"] for p in parts) == int(size)
 print(json.dumps({"kind": tipo, "id": id_, "file": base, "version": time.strftime("%Y-%m-%d", time.gmtime()),
                   "size": int(size), "sha256": sha, "source": fonte, "parts": parts}, ensure_ascii=False, indent=1))
 EOF
-retry gh release upload "$tag" manifest.json --clobber
+retry upload manifest.json
 
 # Remove the parts of the previous version.
 for a in $antigos; do
