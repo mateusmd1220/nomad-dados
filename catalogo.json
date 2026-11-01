@@ -1,6 +1,55 @@
 {
  "version": 1,
- "updated": "2026-11-01T19:48:36Z",
+ "updated": "2026-11-01T20:11:27Z",
  "base": "https://github.com/mateusmd1220/nomad-dados/releases/download",
- "items": []
+ "items": [
+  {
+   "kind": "lugares",
+   "id": "uruguai",
+   "file": "lugares-uruguai.sqlite",
+   "version": "2026-11-01",
+   "size": 11046912,
+   "sha256": "b0b680e58aa98d21f9a7925ef4ede331fecd5d35decc4efcec3a812145bf976d",
+   "source": "uruguay-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "lugares-uruguai.sqlite.20261101.part000",
+     "size": 11046912,
+     "sha256": "b0b680e58aa98d21f9a7925ef4ede331fecd5d35decc4efcec3a812145bf976d"
+    }
+   ]
+  },
+  {
+   "kind": "mapa",
+   "id": "uruguai",
+   "file": "uruguai.pmtiles",
+   "version": "2026-11-01",
+   "size": 202385328,
+   "sha256": "86f689fc4d246e5b0c7b37df96065496e125ba940261c96e7d70bad4ace637ef",
+   "source": "Protomaps 20261101 (OpenStreetMap, ODbL)",
+   "parts": [
+    {
+     "name": "uruguai.pmtiles.20261101.part000",
+     "size": 202385328,
+     "sha256": "86f689fc4d246e5b0c7b37df96065496e125ba940261c96e7d70bad4ace637ef"
+    }
+   ]
+  },
+  {
+   "kind": "rotas",
+   "id": "uruguai",
+   "file": "rotas-uruguai.tar",
+   "version": "2026-11-01",
+   "size": 59576320,
+   "sha256": "499094b3b54120a6ad521d26234fd36df6aae329259447dd975c82629110e719",
+   "source": "uruguay-261031.osm.pbf (OpenStreetMap, ODbL); Valhalla 3.9.0",
+   "parts": [
+    {
+     "name": "rotas-uruguai.tar.20261101.part000",
+     "size": 59576320,
+     "sha256": "499094b3b54120a6ad521d26234fd36df6aae329259447dd975c82629110e719"
+    }
+   ]
+  }
+ ]
 }
