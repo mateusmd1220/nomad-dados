@@ -2,7 +2,7 @@
 # Publishes one built file as release <tipo>-<regiao>: publicar.sh <tipo> <regiao> <arquivo> <fonte.txt>
 # The file goes up in parts of 512 MiB (GitHub takes < 2 GiB per file; small parts also make a
 # failed download on the phone cheap to redo), each with its SHA-256, plus manifest.json.
-# Parts are cut from the end of the file, so the disk never holds much more than the file itself.
+# The runner has ~110 GB free, so the file is simply split (needs twice its size on disk).
 set -euo pipefail
 tipo=$1 id=$2 f=$3 fonte=$(cat "$4")
 tag="$tipo-$id"
@@ -36,16 +36,21 @@ antigos=$(gh release view "$tag" --json assets -q '.assets[].name')
 rid=$(gh api "repos/$GH_REPO/releases/tags/$tag" -q .id)
 
 : > partes.txt
-for ((i = n - 1; i >= 0; i--)); do
-  off=$((i * PART))
-  name=$(printf '%s.%s.part%03d' "$base" "$ver" "$i")
-  tail -c +$((off + 1)) "$f" > "$name"
-  truncate -s "$off" "$f"
-  printf '%s %s %s\n' "$name" "$(stat -c %s "$name")" "$(sha256sum "$name" | cut -d' ' -f1)" >> partes.txt
+split -b "$PART" -d -a 3 "$f" "$base.$ver.part"
+rm -f "$f"
+total=0
+for name in "$base.$ver".part*; do
+  psize=$(stat -c %s "$name")
+  [ "$psize" -gt 0 ] || { echo "::error::parte vazia: $name"; exit 1; }
+  total=$((total + psize))
+  printf '%s %s %s
+' "$name" "$psize" "$(sha256sum "$name" | cut -d' ' -f1)" >> partes.txt
+done
+[ "$total" = "$size" ] || { echo "::error::partes somam $total, esperado $size"; exit 1; }
+while read -r name _; do
   retry upload "$name"
   rm "$name"
-done
-rm -f "$f"
+done < partes.txt
 
 python3 - "$tipo" "$id" "$base" "$size" "$sha" "$fonte" > manifest.json <<'EOF'
 import json, sys, time
