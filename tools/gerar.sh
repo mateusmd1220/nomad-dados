@@ -26,7 +26,9 @@ baixar_osm() {
 
 case "$tipo" in
   mapa)
-    curl -fsSL https://github.com/protomaps/go-pmtiles/releases/download/v1.31.2/go-pmtiles_1.31.2_Linux_x86_64.tar.gz | tar -xz -C "$w/src" pmtiles
+    curl -fsSL -o "$w/src/pmtiles.tgz" https://github.com/protomaps/go-pmtiles/releases/download/v1.31.2/go-pmtiles_1.31.2_Linux_x86_64.tar.gz
+    echo "3ed7dbf4ec2e6dfe5e25b6f70d1ffc932729f93c86db353bf514dd71010a312f  $w/src/pmtiles.tgz" | sha256sum -c --quiet
+    tar -xzf "$w/src/pmtiles.tgz" -C "$w/src" pmtiles
     day=$(date -u +%s)
     for _ in $(seq 0 14); do
       url="https://build.protomaps.com/$(date -u -d "@$day" +%Y%m%d).pmtiles"
@@ -44,7 +46,7 @@ case "$tipo" in
     ;;
 
   lugares)
-    python3 -m pip install -q osmium
+    python3 -m pip install -q 'osmium==4.3.2'
     out="$w/out/lugares-$id.sqlite"
     if [ "$id" = mundo ]; then
       for f in cities1000.zip admin1CodesASCII.txt countryInfo.txt; do
@@ -64,7 +66,8 @@ case "$tipo" in
 
   rotas)
     baixar_osm
-    image=ghcr.io/valhalla/valhalla:3.9.0  # same version as the engine in the app
+    # 3.9.0, the same version as the engine in the app; pinned by digest so the tag cannot be swapped.
+    image=ghcr.io/valhalla/valhalla:3.9.0@sha256:511c095b8caf393dccceb8b519ec96b6f85a0166b2288ba014a8a748acc5a63c
     chmod 777 "$w/src"
     docker run --rm -u "$(id -u):$(id -g)" -v "$w/src:/data" -w /data "$image" bash -euc '
       valhalla_build_config \

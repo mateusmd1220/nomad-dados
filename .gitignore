@@ -1,0 +1,8 @@
+# Repositório público: nunca versionar chaves ou credenciais.
+*.p8
+*.p12
+*.pem
+*.key
+*.mobileprovision
+.env
+.env.*
