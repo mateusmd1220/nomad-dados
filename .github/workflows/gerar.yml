@@ -1,0 +1,95 @@
+# Builds the NOMAD offline files (detailed map, place search, routes) per region and publishes each
+# as release <tipo>-<regiao>; catalogo.json lists them for the app.
+#   gh workflow run gerar.yml --repo mateusmd1220/nomad-dados -f regioes=argentina,chile -f tipos=mapa,lugares,rotas
+name: Gerar dados
+
+on:
+  workflow_dispatch:
+    inputs:
+      regioes:
+        description: "Regiões (ids de regions.json separados por vírgula, ou 'todas')"
+        default: brasil
+      tipos:
+        description: "Tipos: mapa,lugares,rotas"
+        default: mapa,lugares,rotas
+  schedule:
+    - cron: "0 6 3 * *" # lugares: todo mês (igual a MENSAL em tools/plano.py)
+    - cron: "0 6 10 1,4,7,10 *" # mapas e rotas: a cada 3 meses
+
+permissions:
+  contents: write
+
+jobs:
+  plano:
+    runs-on: ubuntu-latest
+    outputs:
+      matriz: ${{ steps.p.outputs.matriz }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        env:
+          REGIOES: ${{ inputs.regioes }}
+          TIPOS: ${{ inputs.tipos }}
+          AGENDA: ${{ github.event.schedule }}
+        run: python3 tools/plano.py
+
+  gerar:
+    needs: plano
+    if: needs.plano.outputs.matriz != '[]'
+    name: ${{ matrix.item.tipo }} ${{ matrix.item.id }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      max-parallel: 4 # gentle with Geofabrik and Protomaps
+      matrix:
+        item: ${{ fromJson(needs.plano.outputs.matriz) }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Liberar disco
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL /usr/local/share/boost /usr/local/.ghcup &
+          sudo apt-get update -qq && sudo apt-get install -y -qq aria2 > /dev/null
+          wait
+          if [ "${{ matrix.item.tipo }}" != rotas ]; then sudo docker image prune --all --force > /dev/null; fi
+          # Work on the disk with the most free space.
+          best=/ ; for d in / /mnt; do [ -d "$d" ] && [ "$(df --output=avail "$d" | tail -1)" -gt "$(df --output=avail "$best" | tail -1)" ] && best=$d; done
+          w="$best/trabalho"; sudo mkdir -p "$w"; sudo chown "$(id -u):$(id -g)" "$w"
+          echo "W=$w" >> "$GITHUB_ENV"
+          df -h / /mnt || true
+
+      - name: Gerar
+        run: bash tools/gerar.sh "${{ matrix.item.tipo }}" "${{ matrix.item.id }}" "$W"
+
+      - name: Publicar
+        run: |
+          f=$(find "$W/out" -maxdepth 1 -type f ! -name fonte.txt | head -1)
+          cd "$W" && bash "$GITHUB_WORKSPACE/tools/publicar.sh" "${{ matrix.item.tipo }}" "${{ matrix.item.id }}" "$f" "$W/out/fonte.txt"
+
+  catalogo:
+    needs: [plano, gerar]
+    if: always() && needs.plano.result == 'success'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Atualizar catalogo.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase origin "${GITHUB_REF_NAME}"
+            python3 tools/catalogo.py
+            git add catalogo.json
+            git diff --cached --quiet && exit 0
+            git commit -q -m "catálogo: $(date -u +%F)"
+            git push -q origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            git reset -q --hard "origin/${GITHUB_REF_NAME}"
+            sleep $((i * 10))
+          done
+          exit 1
