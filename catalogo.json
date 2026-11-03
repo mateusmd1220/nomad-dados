@@ -1,26 +1,26 @@
 {
  "version": 1,
- "updated": "2026-11-01T21:02:41Z",
+ "updated": "2026-11-03T14:11:14Z",
  "base": "https://github.com/mateusmd1220/nomad-dados/releases/download",
  "items": [
   {
    "kind": "lugares",
    "id": "america-do-sul",
    "file": "lugares-america-do-sul.sqlite",
-   "version": "2026-11-01",
-   "size": 961032192,
-   "sha256": "30998e691370f372deda8fc976fdcefbaa009cc0b0685e5831646b7017301550",
-   "source": "south-america-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "version": "2026-11-03",
+   "size": 961376256,
+   "sha256": "803fc06e0884a69c3d786c11b57beb1112c023fd91811e437baf2d908f20d432",
+   "source": "south-america-261102.osm.pbf (OpenStreetMap, ODbL)",
    "parts": [
     {
-     "name": "lugares-america-do-sul.sqlite.20261101.part000",
+     "name": "lugares-america-do-sul.sqlite.20261103.part000",
      "size": 536870912,
-     "sha256": "f0bcb654dc10976f1ea7dadb0a3ff77ca89f97439213f1777bc03faebd308737"
+     "sha256": "d0ef77fc5d633b674a1b155507de5746fefb4915468d85e49652790f9f618eb2"
     },
     {
-     "name": "lugares-america-do-sul.sqlite.20261101.part001",
-     "size": 424161280,
-     "sha256": "bd25b188eac839662c6ff9a8b199862d15cb8a323fbfa84c97d482a5243bbe08"
+     "name": "lugares-america-do-sul.sqlite.20261103.part001",
+     "size": 424505344,
+     "sha256": "9d4cec92c921275998b462837ab1e31f70652ab64f33e39670030c0eaa9452c1"
     }
    ]
   },
@@ -28,15 +28,15 @@
    "kind": "lugares",
    "id": "argentina",
    "file": "lugares-argentina.sqlite",
-   "version": "2026-11-01",
-   "size": 123990016,
-   "sha256": "ea1d9439c6d12ca37a179dba2ab1d6660c85e69d8161d7919b522dcbedb71b6a",
-   "source": "argentina-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "version": "2026-11-03",
+   "size": 124043264,
+   "sha256": "d5e69f216f94aa0f77b69f0015790ca5a261da2bed46ae5b0c9669c4cb47c99c",
+   "source": "argentina-261102.osm.pbf (OpenStreetMap, ODbL)",
    "parts": [
     {
-     "name": "lugares-argentina.sqlite.20261101.part000",
-     "size": 123990016,
-     "sha256": "ea1d9439c6d12ca37a179dba2ab1d6660c85e69d8161d7919b522dcbedb71b6a"
+     "name": "lugares-argentina.sqlite.20261103.part000",
+     "size": 124043264,
+     "sha256": "d5e69f216f94aa0f77b69f0015790ca5a261da2bed46ae5b0c9669c4cb47c99c"
     }
    ]
   },
@@ -44,15 +44,15 @@
    "kind": "lugares",
    "id": "bolivia",
    "file": "lugares-bolivia.sqlite",
-   "version": "2026-11-01",
-   "size": 25272320,
-   "sha256": "ba301f6a11ac5b26283cc0b6ca482b05cf93d9262682ebd34cb8623716c09043",
-   "source": "bolivia-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "version": "2026-11-03",
+   "size": 25276416,
+   "sha256": "e7df9bacd0850befa00e0eda6d0a81c1f45226743acac9e3958aa3bbce075050",
+   "source": "bolivia-261102.osm.pbf (OpenStreetMap, ODbL)",
    "parts": [
     {
-     "name": "lugares-bolivia.sqlite.20261101.part000",
-     "size": 25272320,
-     "sha256": "ba301f6a11ac5b26283cc0b6ca482b05cf93d9262682ebd34cb8623716c09043"
+     "name": "lugares-bolivia.sqlite.20261103.part000",
+     "size": 25276416,
+     "sha256": "e7df9bacd0850befa00e0eda6d0a81c1f45226743acac9e3958aa3bbce075050"
     }
    ]
   },
@@ -60,15 +60,15 @@
    "kind": "lugares",
    "id": "brasil",
    "file": "lugares-brasil.sqlite",
-   "version": "2026-11-01",
-   "size": 507817984,
-   "sha256": "0b07675e037a0416a0047b4c0a9d26dbabe1675407cc8f482855d6a680bba02a",
-   "source": "brazil-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "version": "2026-11-03",
+   "size": 507985920,
+   "sha256": "d89b0c11d646295b82e0684ab06d1065f1a1a0b2d92559e1590c5fea4a72e9a0",
+   "source": "brazil-261102.osm.pbf (OpenStreetMap, ODbL)",
    "parts": [
     {
-     "name": "lugares-brasil.sqlite.20261101.part000",
-     "size": 507817984,
-     "sha256": "0b07675e037a0416a0047b4c0a9d26dbabe1675407cc8f482855d6a680bba02a"
+     "name": "lugares-brasil.sqlite.20261103.part000",
+     "size": 507985920,
+     "sha256": "d89b0c11d646295b82e0684ab06d1065f1a1a0b2d92559e1590c5fea4a72e9a0"
     }
    ]
   },
@@ -76,15 +76,15 @@
    "kind": "lugares",
    "id": "chile",
    "file": "lugares-chile.sqlite",
-   "version": "2026-11-01",
-   "size": 71258112,
-   "sha256": "af9262e73b996ac1389a4e54e8403231d4255b4665cb8caa0ebc6bf791c8781a",
-   "source": "chile-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "version": "2026-11-03",
+   "size": 71282688,
+   "sha256": "ca631ef5d484c7dcc509eaa7eb155e58e242dd97ade9588964fa378ce5ec6ceb",
+   "source": "chile-261102.osm.pbf (OpenStreetMap, ODbL)",
    "parts": [
     {
-     "name": "lugares-chile.sqlite.20261101.part000",
-     "size": 71258112,
-     "sha256": "af9262e73b996ac1389a4e54e8403231d4255b4665cb8caa0ebc6bf791c8781a"
+     "name": "lugares-chile.sqlite.20261103.part000",
+     "size": 71282688,
+     "sha256": "ca631ef5d484c7dcc509eaa7eb155e58e242dd97ade9588964fa378ce5ec6ceb"
     }
    ]
   },
@@ -92,15 +92,15 @@
    "kind": "lugares",
    "id": "colombia",
    "file": "lugares-colombia.sqlite",
-   "version": "2026-11-01",
-   "size": 66887680,
-   "sha256": "8af989285fcb34b2397fa1c1f6d47fe9b261885f595b53b5b0f432c01643938e",
-   "source": "colombia-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "version": "2026-11-03",
+   "size": 66895872,
+   "sha256": "aedf3b512d7f8d89d6c0219043cf3f697d811fb1f54f3e54b7420fad2654cd16",
+   "source": "colombia-261102.osm.pbf (OpenStreetMap, ODbL)",
    "parts": [
     {
-     "name": "lugares-colombia.sqlite.20261101.part000",
-     "size": 66887680,
-     "sha256": "8af989285fcb34b2397fa1c1f6d47fe9b261885f595b53b5b0f432c01643938e"
+     "name": "lugares-colombia.sqlite.20261103.part000",
+     "size": 66895872,
+     "sha256": "aedf3b512d7f8d89d6c0219043cf3f697d811fb1f54f3e54b7420fad2654cd16"
     }
    ]
   },
@@ -108,15 +108,15 @@
    "kind": "lugares",
    "id": "equador",
    "file": "lugares-equador.sqlite",
-   "version": "2026-11-01",
-   "size": 40034304,
-   "sha256": "74b6bf2efc47118bb53b359bd399ccdf48d46b86b74dcfea0ae55fa2c17457d9",
-   "source": "ecuador-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "version": "2026-11-03",
+   "size": 40046592,
+   "sha256": "0425c7d1f54bfc2d0cfab47fde3a11c23039f9295f4350098c861abc866dee8a",
+   "source": "ecuador-261102.osm.pbf (OpenStreetMap, ODbL)",
    "parts": [
     {
-     "name": "lugares-equador.sqlite.20261101.part000",
-     "size": 40034304,
-     "sha256": "74b6bf2efc47118bb53b359bd399ccdf48d46b86b74dcfea0ae55fa2c17457d9"
+     "name": "lugares-equador.sqlite.20261103.part000",
+     "size": 40046592,
+     "sha256": "0425c7d1f54bfc2d0cfab47fde3a11c23039f9295f4350098c861abc866dee8a"
     }
    ]
   },
@@ -124,15 +124,15 @@
    "kind": "lugares",
    "id": "mundo",
    "file": "lugares-mundo.sqlite",
-   "version": "2026-11-01",
-   "size": 72900608,
-   "sha256": "c8b1f11a94e7fe50165ef84ff384f02fde1a256e512de69f1bb3a1f89a90c621",
-   "source": "GeoNames (CC BY 4.0) e OurAirports (domínio público), 2026-11-01",
+   "version": "2026-11-03",
+   "size": 72908800,
+   "sha256": "58adb022d782428e2337b0a085ca24ab55e5f95abe4fb811584837e746a6d80f",
+   "source": "GeoNames (CC BY 4.0) e OurAirports (domínio público), 2026-11-03",
    "parts": [
     {
-     "name": "lugares-mundo.sqlite.20261101.part000",
-     "size": 72900608,
-     "sha256": "c8b1f11a94e7fe50165ef84ff384f02fde1a256e512de69f1bb3a1f89a90c621"
+     "name": "lugares-mundo.sqlite.20261103.part000",
+     "size": 72908800,
+     "sha256": "58adb022d782428e2337b0a085ca24ab55e5f95abe4fb811584837e746a6d80f"
     }
    ]
   },
@@ -140,15 +140,15 @@
    "kind": "lugares",
    "id": "paraguai",
    "file": "lugares-paraguai.sqlite",
-   "version": "2026-11-01",
+   "version": "2026-11-03",
    "size": 14602240,
-   "sha256": "95121118d6bcf837d1e135141452ecbbefaacc2c0d8e1635aa05bfda8bf8bb94",
-   "source": "paraguay-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "sha256": "559e4d39aba12e17a8066354b6e6d5c898309b816560c677ff6e27b28af5943a",
+   "source": "paraguay-261102.osm.pbf (OpenStreetMap, ODbL)",
    "parts": [
     {
-     "name": "lugares-paraguai.sqlite.20261101.part000",
+     "name": "lugares-paraguai.sqlite.20261103.part000",
      "size": 14602240,
-     "sha256": "95121118d6bcf837d1e135141452ecbbefaacc2c0d8e1635aa05bfda8bf8bb94"
+     "sha256": "559e4d39aba12e17a8066354b6e6d5c898309b816560c677ff6e27b28af5943a"
     }
    ]
   },
@@ -156,15 +156,15 @@
    "kind": "lugares",
    "id": "peru",
    "file": "lugares-peru.sqlite",
-   "version": "2026-11-01",
-   "size": 69341184,
-   "sha256": "23ac0a0e37d604beba2dbc1be58efd21811ffe6ba0e7e3cf88c9c676994c5c8b",
-   "source": "peru-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "version": "2026-11-03",
+   "size": 69349376,
+   "sha256": "c0f049e09baf67a5e5893595f36abf6b42d1f8b3e1c9c62a66d6b953b4cfbf6a",
+   "source": "peru-261102.osm.pbf (OpenStreetMap, ODbL)",
    "parts": [
     {
-     "name": "lugares-peru.sqlite.20261101.part000",
-     "size": 69341184,
-     "sha256": "23ac0a0e37d604beba2dbc1be58efd21811ffe6ba0e7e3cf88c9c676994c5c8b"
+     "name": "lugares-peru.sqlite.20261103.part000",
+     "size": 69349376,
+     "sha256": "c0f049e09baf67a5e5893595f36abf6b42d1f8b3e1c9c62a66d6b953b4cfbf6a"
     }
    ]
   },
@@ -172,15 +172,15 @@
    "kind": "lugares",
    "id": "uruguai",
    "file": "lugares-uruguai.sqlite",
-   "version": "2026-11-01",
+   "version": "2026-11-03",
    "size": 11046912,
-   "sha256": "b0b680e58aa98d21f9a7925ef4ede331fecd5d35decc4efcec3a812145bf976d",
-   "source": "uruguay-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "sha256": "8c46e85d9b32107b8240f3eca66cae866a8d19305dee22d47f3d015615eaa924",
+   "source": "uruguay-261102.osm.pbf (OpenStreetMap, ODbL)",
    "parts": [
     {
-     "name": "lugares-uruguai.sqlite.20261101.part000",
+     "name": "lugares-uruguai.sqlite.20261103.part000",
      "size": 11046912,
-     "sha256": "b0b680e58aa98d21f9a7925ef4ede331fecd5d35decc4efcec3a812145bf976d"
+     "sha256": "8c46e85d9b32107b8240f3eca66cae866a8d19305dee22d47f3d015615eaa924"
     }
    ]
   },
@@ -188,15 +188,15 @@
    "kind": "lugares",
    "id": "venezuela",
    "file": "lugares-venezuela.sqlite",
-   "version": "2026-11-01",
-   "size": 25169920,
-   "sha256": "e482b8c07533871a639961f5726cc8563ecf956234327bcf6e413eb306f0ae52",
-   "source": "venezuela-261031.osm.pbf (OpenStreetMap, ODbL)",
+   "version": "2026-11-03",
+   "size": 25223168,
+   "sha256": "aa19d884f66779dedb7ec6485896e21143cc893225cba6ba280f1a359182d182",
+   "source": "venezuela-261102.osm.pbf (OpenStreetMap, ODbL)",
    "parts": [
     {
-     "name": "lugares-venezuela.sqlite.20261101.part000",
-     "size": 25169920,
-     "sha256": "e482b8c07533871a639961f5726cc8563ecf956234327bcf6e413eb306f0ae52"
+     "name": "lugares-venezuela.sqlite.20261103.part000",
+     "size": 25223168,
+     "sha256": "aa19d884f66779dedb7ec6485896e21143cc893225cba6ba280f1a359182d182"
     }
    ]
   },
